@@ -7,14 +7,45 @@
 //
 
 import UIKit
+import AVFoundation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController , AVAudioPlayerDelegate {
 
+    var player:AVAudioPlayer = AVAudioPlayer()
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        print("Starting Player App ..")
+        do {
+            
+            guard let audioPlayer = Bundle.main.path(forResource: "SeeYouAgain", ofType: "mp3")
+                else {
+                    print("===> guard error :\n    file:\(#file)\n    line:\(#line)\n    function:\(#function) ")
+                    return
+            }
+            try player = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPlayer) as URL)
+            
+        } catch {
+            print(error)
+        }
+    
     }
 
+    @IBAction func playBtn(_ sender: Any) {
+        player.play()
+    }
+    
+    
+    @IBAction func pauseBtn(_ sender: Any) {
+        player.pause()
+    }
+    
+    
+    @IBAction func stopBtn(_ sender: Any) {
+        player.stop()
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

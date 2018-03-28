@@ -12,6 +12,11 @@
 		FAC4C4D7206B13690074F4E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC4C4D5206B13690074F4E3 /* Main.storyboard */; };
 		FAC4C4D9206B13690074F4E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC4C4D8206B13690074F4E3 /* Assets.xcassets */; };
 		FAC4C4DC206B13690074F4E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC4C4DA206B13690074F4E3 /* LaunchScreen.storyboard */; };
+		FAC4C4E5206B13970074F4E3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC4C4E4206B13970074F4E3 /* AVFoundation.framework */; };
+		FAC4C4EB206B1A2E0074F4E3 /* SeeYouAgain.wav in Resources */ = {isa = PBXBuildFile; fileRef = FAC4C4EA206B19B40074F4E3 /* SeeYouAgain.wav */; };
+		FAC4C4EC206B1A2E0074F4E3 /* xenojam.wav in Resources */ = {isa = PBXBuildFile; fileRef = FAC4C4E9206B19180074F4E3 /* xenojam.wav */; };
+		FAC4C4EF206B1ABB0074F4E3 /* SeeYouAgain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FAC4C4ED206B1AAF0074F4E3 /* SeeYouAgain.mp3 */; };
+		FAC4C4F0206B1ABB0074F4E3 /* xenojam.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FAC4C4EE206B1AAF0074F4E3 /* xenojam.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		FAC4C4D8206B13690074F4E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAC4C4DB206B13690074F4E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAC4C4DD206B13690074F4E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAC4C4E4206B13970074F4E3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FAC4C4E9206B19180074F4E3 /* xenojam.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = xenojam.wav; sourceTree = "<group>"; };
+		FAC4C4EA206B19B40074F4E3 /* SeeYouAgain.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = SeeYouAgain.wav; sourceTree = "<group>"; };
+		FAC4C4ED206B1AAF0074F4E3 /* SeeYouAgain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SeeYouAgain.mp3; sourceTree = "<group>"; };
+		FAC4C4EE206B1AAF0074F4E3 /* xenojam.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = xenojam.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC4C4E5206B13970074F4E3 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +51,7 @@
 			children = (
 				FAC4C4D0206B13690074F4E3 /* IOS-Swift-AudioPlayer02 */,
 				FAC4C4CF206B13690074F4E3 /* Products */,
+				FAC4C4E3206B13970074F4E3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,9 +71,21 @@
 				FAC4C4D5206B13690074F4E3 /* Main.storyboard */,
 				FAC4C4D8206B13690074F4E3 /* Assets.xcassets */,
 				FAC4C4DA206B13690074F4E3 /* LaunchScreen.storyboard */,
+				FAC4C4EA206B19B40074F4E3 /* SeeYouAgain.wav */,
+				FAC4C4E9206B19180074F4E3 /* xenojam.wav */,
+				FAC4C4ED206B1AAF0074F4E3 /* SeeYouAgain.mp3 */,
+				FAC4C4EE206B1AAF0074F4E3 /* xenojam.mp3 */,
 				FAC4C4DD206B13690074F4E3 /* Info.plist */,
 			);
 			path = "IOS-Swift-AudioPlayer02";
+			sourceTree = "<group>";
+		};
+		FAC4C4E3206B13970074F4E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAC4C4E4206B13970074F4E3 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +147,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC4C4EF206B1ABB0074F4E3 /* SeeYouAgain.mp3 in Resources */,
+				FAC4C4F0206B1ABB0074F4E3 /* xenojam.mp3 in Resources */,
+				FAC4C4EB206B1A2E0074F4E3 /* SeeYouAgain.wav in Resources */,
+				FAC4C4EC206B1A2E0074F4E3 /* xenojam.wav in Resources */,
 				FAC4C4DC206B13690074F4E3 /* LaunchScreen.storyboard in Resources */,
 				FAC4C4D9206B13690074F4E3 /* Assets.xcassets in Resources */,
 				FAC4C4D7206B13690074F4E3 /* Main.storyboard in Resources */,
